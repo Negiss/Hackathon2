@@ -39,6 +39,8 @@
 
 #imgg {
     position:relative;
+    max-height: 470px;
+    margin: auto;
 }
 
 .hide {
