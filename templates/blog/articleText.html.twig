@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les articles | Texte{% endblock %}
+
+{% block body %}
+    <style>
+        .italic {font-style: italic;}
+
+        .bold {font-weight: bold;}
+
+        .fixr {font-size: 2em;}
+
+        .orange {color: #ffa900;}
+
+        body {background-color: rgba(135, 135, 135, 0.46);}
+
+        .card {border-color: black;
+        border-width: 1px;}
+    </style>
+
+    <h1 class="text-center pt-5">Bienvenue sur la page des articles écrits, bonne lecture !</h1>
+
+    <div class="container-flex row justify-content-center">
+    {% for article in articles %}
+        <div class="col-5">
+            <div class="jumbotron card m-1 p-1 mt-5">
+                <h2>{{ article.titre }}</h2>
+                <p>{{ article.contenu }}</p>
+                <img src="" alt="L'image charge..">
+                <a href="{{ path('article_id', {'id' : article.id }) }}" class="btn btn-outline-warning w-25 mb-2 mt-2">Voir plus</a>
+                <div>- <span class="italic">Créé le {{ article.date | date('d/m/Y') }} par <span class="bold">{{ article.auteur.name }}</span></span> à {{ article.localisation }} </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

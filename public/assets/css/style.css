@@ -1,14 +1,79 @@
 .preaccueil {
     background: black url("http://image.noelshack.com/fichiers/2018/51/3/1545229564-sans-titre.png") no-repeat center;
     margin-top: 50%;
+    z-index: 1000;
+    position:relative;
+}
+
+.btn-outline-warning {
+    background-color: black;
+}
+
+.display-3 {
+    margin-top: -20px;
+}
+
+.lead {
+    margin-bottom: 42px;
 }
 
 .accueil {
     background-color: rgba(135, 135, 135, 0.46);
+    position: relative;
+    z-index:1000;
+}
+
+.bobo {
+    position: relative;
+    z-index: 1;
+}
+
+#imgTitle{
+    background-color: #f7f7f9;
+    position:absolute;
+    margin-top: -450px;
+    margin-left:60px;
+    opacity: 0.7;
+    padding: 5px;
+    margin-right: 90px;
+}
+
+#imgTitle2{
+    background-color: #f7f7f9;
+    position:absolute;
+    margin-top: -450px;
+    margin-left:60px;
+    opacity: 0.7;
+    padding: 5px;
+    margin-right:90px;
+}
+
+#imgTitle3{
+    background-color: #f7f7f9;
+    position:absolute;
+    margin-top: -450px;
+    margin-left:60px;
+    opacity: 0.7;
+    padding: 5px;
+    margin-right:90px;
+}
+
+#imgg {
+    position:relative;
+    max-height: 470px;
+    margin: auto;
 }
 
 .hide {
     display: none;
+    z-index: 1;
+    position:relative;
+}
+
+
+.d-flex {
+    position: relative;
+    z-index: 2;
 }
 
 .fixr {
