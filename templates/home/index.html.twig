@@ -29,16 +29,22 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    {# <a class="nav-link" href="{{ path('accueil') }}">Accueil <span class="sr-only">(current)</span></a> #}
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Articles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Vidéos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Audio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diaporamas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">A propos</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -49,6 +55,41 @@
     </nav>
 </div>
 
+<div class="row justify-content-center container-flex hide">
+<div class="jumbotron col-5 m-3" onmouseover="document.getElementById('imgTitle').style.display = 'block';" onmouseout="document.getElementById('imgTitle').style.display = 'none';">
+    <h1 class="display-3">Derinère <span class="orange">minute</span></h1>
+
+    <img id="imgg" src="https://static.actu.fr/uploads/2018/11/gilets-jaunes-manifestations-routes-d%C3%A9partementales-d%C3%A9gradations-lille-actu-d%C3%A9partement-nord-854x553.jpg" alt="gilet" style="max-width: 720px"">
+    <h1 id="imgTitle" style="display:none;">Les gilets jaunes grondent !</h1>
+
+    <hr class="my-4">
+    <p>Les gilets jaunes restent mobilisés partout en France et réclament des réponses de l'Etat.</p>
+    <p class="lead">
+        <a class="btn btn-outline-warning" href="#" role="button">En savoir plus</a>
+    </p>
+</div>
+<div class="jumbotron col-5 m-3">
+    <h1 class="display-3">FIX.<span class="orange">R</span> </h1>
+    <p class="lead">Fix.R (prononcé “fixeur”) est une plateforme web qui veut mettre directement en relation les lecteurs et les journalistes.<br><br>
+
+        Sur cette plateforme, les utilisateurs pourront consulter du contenu classique d’un média produit par les journalistes : lire des articles, voir des vidéos ou des photos, écouter des podcasts ou encore assister à des évènements en live.
+
+        <br>
+        <br>
+        Mais nous souhaitons aller plus loin dans la démarche et être plus qu’un média.
+
+        Pour cela, nous voulons créer une interaction directe entre le lecteur et le journaliste. Cela passe par des débats autour d’un article, par des questions posées par les utilisateurs afin de vérifier ou de mieux comprendre une information et par des votes des lecteurs pour choisir un sujet d’article.
+<br>
+        <br>
+        Cependant, le journaliste n’est en rien obligé de participer à cette interaction s’il ne le souhaite pas. Il est libre de travailler comme il veut, quand il veut et de faire ce qu’il veut avec cette plateforme. Nous garantissons une indépendance et une autonomie totales des journalistes.
+    </p>
+    <hr class="my-4">
+    <p>Pour en savoir davantage, cliquez sur le lien ci-dessous !</p>
+    <p class="lead">
+        <a class="btn btn-outline-warning" href="#" role="button">A propos de <span style="color:white;">Fix.</span>R</a>
+    </p>
+</div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
